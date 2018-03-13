@@ -19,7 +19,7 @@ public class EndDirector : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Title");
+            SceneManager.LoadScene("PreTitle");
             GameDirector.Pscore = 0;
         }
 

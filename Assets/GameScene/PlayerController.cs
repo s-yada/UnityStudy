@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour {
             outtime = 0;
         }
 
-        Debug.Log(outtime);
+        //Debug.Log(outtime);
 
         }
        

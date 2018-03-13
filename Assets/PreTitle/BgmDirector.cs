@@ -11,10 +11,10 @@ public class BgmDirector : MonoBehaviour {
 		
 	}
 	
-    public void DestroyEnabled()
-    {
-        DontDestroyEnabled = false;
-    }
+    //public void DestroyEnabled()
+    //{
+      //  DontDestroyEnabled = false;
+    //}
 
 	// Update is called once per frame
 	void Update () {

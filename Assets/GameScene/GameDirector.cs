@@ -8,6 +8,7 @@ public class GameDirector : MonoBehaviour {
 
     GameObject hpGauge;
     GameObject timer;
+    GameObject Audio;
     public static int Pscore;
     float score;
     float oldScore;
@@ -16,6 +17,8 @@ public class GameDirector : MonoBehaviour {
 	void Start () {
 
         this.hpGauge = GameObject.Find("hp_gauge");
+
+        this.Audio = GameObject.Find("Audio Source");
 
         this.timer = GameObject.Find("Timer");
         score = 0;
@@ -26,6 +29,8 @@ public class GameDirector : MonoBehaviour {
         //Pminuite = 0;
 
         timer.GetComponent<Text>().text = "0 0 0 0";
+
+        Destroy(Audio);
         	}
 	
     public void DecreaseHp()

@@ -62,18 +62,18 @@ public class HighscoreDirector : MonoBehaviour {
         }
         else if (score > thirdScore && score < secondScore)
         {
-            PlayerPrefs.SetInt(key3, thirdScore);
+            PlayerPrefs.SetInt(key3, score);
             PlayerPrefs.SetInt(key4, thirdScore);
             PlayerPrefs.SetInt(key5, forthScore);
         }
         else if (score > forthScore && score < thirdScore)
         {
-            PlayerPrefs.SetInt(key4, forthScore);
+            PlayerPrefs.SetInt(key4, score);
             PlayerPrefs.SetInt(key5, forthScore);
         }
         else if (score > fifthScore && score < forthScore)
         {
-            PlayerPrefs.SetInt(key5, fifthScore);
+            PlayerPrefs.SetInt(key5, score);
         }
 
     }
