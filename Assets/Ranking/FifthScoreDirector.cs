@@ -9,9 +9,11 @@ public class FifthScoreDirector : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        
+        //格納されている5位のスコアの取得
         fifthscore = PlayerPrefs.GetInt("FIFTH SCORE");
 
+        //5位のスコアの表示
         GetComponent<Text>().text =
             "5th : " + fifthscore.ToString();
 

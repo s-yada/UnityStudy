@@ -7,8 +7,8 @@ public class BackTop : MonoBehaviour {
 
     public void ToTitle()
     {
+        //タイトルへ戻る
         SceneManager.LoadScene("Title");
-        //PlayerPrefs.DeleteAll();
     }
 
 	// Use this for initialization

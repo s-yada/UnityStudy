@@ -10,8 +10,10 @@ public class ScondScoreDirector : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        //2位のスコアの取得
         secondscore = PlayerPrefs.GetInt("SECOND SCORE");
 
+        //2位のスコアの表示
         GetComponent<Text>().text =
             "2nd : " + secondscore.ToString();
 

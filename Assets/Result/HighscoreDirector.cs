@@ -22,19 +22,20 @@ public class HighscoreDirector : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        highScore = PlayerPrefs.GetInt(key1, 0);
         //保存しておいたハイスコアをキーで呼び出し取得し保存されていなければ0になる,ValueはNG
+        highScore = PlayerPrefs.GetInt(key1, 0);
 
+        //2位～5位も同様にキーで呼び出し、比較用の変数に代入
         secondScore = PlayerPrefs.GetInt(key2, 0);
         thirdScore = PlayerPrefs.GetInt(key3, 0);
         forthScore = PlayerPrefs.GetInt(key4, 0);
         fifthScore = PlayerPrefs.GetInt(key5, 0);
 
-        GetComponent<Text>().text = "BestScore : " + highScore.ToString();
         //ハイスコアを表示
+        GetComponent<Text>().text = "BestScore : " + highScore.ToString();
 
-        score = GameDirector.Pscore;
         //時間をスコアに変換
+        score = GameDirector.Pscore;
     }
 
     // Update is called once per frame
@@ -53,6 +54,8 @@ public class HighscoreDirector : MonoBehaviour {
             //ハイスコア表示の更新
             GetComponent<Text>().text = "BestScore : "+score.ToString();
         }
+
+        //現在のスコアが2位にランクイン
         else if (score > secondScore && score<highScore)
         {
             PlayerPrefs.SetInt(key2, score);
@@ -60,17 +63,23 @@ public class HighscoreDirector : MonoBehaviour {
             PlayerPrefs.SetInt(key4, thirdScore);
             PlayerPrefs.SetInt(key5, forthScore);
         }
+
+        //3位にランクイン
         else if (score > thirdScore && score < secondScore)
         {
             PlayerPrefs.SetInt(key3, score);
             PlayerPrefs.SetInt(key4, thirdScore);
             PlayerPrefs.SetInt(key5, forthScore);
         }
+
+        //4位にランクイン
         else if (score > forthScore && score < thirdScore)
         {
             PlayerPrefs.SetInt(key4, score);
             PlayerPrefs.SetInt(key5, forthScore);
         }
+
+        //5位にランクイン
         else if (score > fifthScore && score < forthScore)
         {
             PlayerPrefs.SetInt(key5, score);

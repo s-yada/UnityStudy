@@ -10,8 +10,10 @@ public class ForthScoreDirector : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        //4位のスコアの取得
         forthscore = PlayerPrefs.GetInt("FORTH SCORE");
 
+        //4位のスコアの表示
         GetComponent<Text>().text =
             "4th : " + forthscore.ToString();
 

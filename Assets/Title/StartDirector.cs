@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartDirector : MonoBehaviour {
 
     
-
+    //ランキング画面への遷移
     public void Ranking()
     {
         SceneManager.LoadScene("Ranking");

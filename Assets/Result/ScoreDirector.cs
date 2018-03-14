@@ -9,6 +9,7 @@ public class ScoreDirector : MonoBehaviour {
     // Use this for initialization
     void Start () {
         
+        //今回のスコアの表示
         GetComponent<Text>().text =
             "YourScore : "+GameDirector.Pscore.ToString();
     }

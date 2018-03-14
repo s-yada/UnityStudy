@@ -298,6 +298,8 @@
     <Compile Include="Assets\GameScene\ArrowGenerator.cs" />
     <Compile Include="Assets\GameScene\GameDirector.cs" />
     <Compile Include="Assets\GameScene\PlayerController.cs" />
+    <Compile Include="Assets\GameScene\RarrowController.cs" />
+    <Compile Include="Assets\GameScene\RescueController.cs" />
     <Compile Include="Assets\PreTitle\BgmDirector.cs" />
     <Compile Include="Assets\PreTitle\MoveTitle.cs" />
     <Compile Include="Assets\Ranking\BackTop.cs" />

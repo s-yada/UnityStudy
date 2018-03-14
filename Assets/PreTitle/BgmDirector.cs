@@ -11,13 +11,10 @@ public class BgmDirector : MonoBehaviour {
 		
 	}
 	
-    //public void DestroyEnabled()
-    //{
-      //  DontDestroyEnabled = false;
-    //}
-
 	// Update is called once per frame
 	void Update () {
+
+        //BGMを流しっぱなしにする処理
         if (DontDestroyEnabled)
         {
             DontDestroyOnLoad(this);

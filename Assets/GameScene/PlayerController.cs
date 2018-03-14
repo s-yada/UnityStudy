@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    //移動速度
     public float speed = 5;
+    
+    //ボタンの判定
     bool LeftPush = false;
     bool RightPush = false;
+    
+    //画面外滞在量
     float outtime;
     
 
@@ -60,16 +65,19 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
+        //左に移動させる判定
         if (LeftPush && !RightPush)
         {
             LeftMove();
         }
 
-        if(!LeftPush && RightPush)
+        //右に移動させる判定
+        if (!LeftPush && RightPush)
         {
             RightMove();
         }
 
+        //画面外に出ている間 outtime を加算
         if (this.transform.position.x < -9.9f || this.transform.position.x > 9.9f)
         {
             outtime += Time.deltaTime;
@@ -77,13 +85,12 @@ public class PlayerController : MonoBehaviour {
 
         GameObject Director = GameObject.Find("GameDirector");
 
+        //outtimeが一定量貯まるとダメージ
         if (outtime > 0.7f)
         {
             Director.GetComponent<GameDirector>().DecreaseHp();
             outtime = 0;
         }
-
-        //Debug.Log(outtime);
 
         }
        

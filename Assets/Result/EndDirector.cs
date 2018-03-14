@@ -16,7 +16,7 @@ public class EndDirector : MonoBehaviour {
 	void Update () {
 
         
-
+        //マウスのボタンが押されたときにタイトル準備画面へ遷移、スコアの値も初期化する。
         if (Input.GetMouseButtonDown(0))
         {
             SceneManager.LoadScene("PreTitle");

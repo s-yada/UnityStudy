@@ -10,8 +10,10 @@ public class HighScoreDirector : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        //ハイスコア（1位のスコア）の取得
         highscore = PlayerPrefs.GetInt("HIGH SCORE");
 
+        //ハイスコアの表示
         GetComponent<Text>().text =
             "1st : " + highscore.ToString();
 

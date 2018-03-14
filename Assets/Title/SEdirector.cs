@@ -11,6 +11,7 @@ public class SEdirector : MonoBehaviour {
         audioSource = gameObject.GetComponent<AudioSource>();
 	}
 	
+    //Startが押されたときにSEを鳴らす
     public void touchSE_Start()
     {
         audioSource.Play();

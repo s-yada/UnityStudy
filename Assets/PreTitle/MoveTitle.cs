@@ -8,6 +8,7 @@ public class MoveTitle : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        //タイトルへの遷移
         SceneManager.LoadScene("Title");
 
 	}

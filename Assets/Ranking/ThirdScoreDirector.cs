@@ -10,8 +10,10 @@ public class ThirdScoreDirector : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        //3位のスコアの取得
         thirdscore = PlayerPrefs.GetInt("THIRD SCORE");
 
+        //3位のスコアの表示
         GetComponent<Text>().text =
             "3rd : " + thirdscore.ToString();
 

@@ -421,6 +421,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 1331117710741122, guid: ca0f7bde33dd4b449843fe94cb5ce48d,
     type: 2}
+  RarrowPrefab: {fileID: 1342963893458832, guid: b66ac437af512214b887a8d8b0e84465,
+    type: 2}
+  RescuePrefab: {fileID: 1871379875566932, guid: eb900dbbb89fed94ca62bf936ffcc934,
+    type: 2}
 --- !u!4 &1037146781
 Transform:
   m_ObjectHideFlags: 0
