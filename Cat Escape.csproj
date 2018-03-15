@@ -300,12 +300,14 @@
     <Compile Include="Assets\GameScene\PlayerController.cs" />
     <Compile Include="Assets\GameScene\RarrowController.cs" />
     <Compile Include="Assets\GameScene\RescueController.cs" />
+    <Compile Include="Assets\PreGameScene\MoveGameScene.cs" />
     <Compile Include="Assets\PreTitle\BgmDirector.cs" />
     <Compile Include="Assets\PreTitle\MoveTitle.cs" />
     <Compile Include="Assets\Ranking\BackTop.cs" />
     <Compile Include="Assets\Ranking\FifthScoreDirector.cs" />
     <Compile Include="Assets\Ranking\ForthScoreDirector.cs" />
     <Compile Include="Assets\Ranking\HighScoreDirector.cs" />
+    <Compile Include="Assets\Ranking\PlayerPrefsDelete.cs" />
     <Compile Include="Assets\Ranking\ScondScoreDirector.cs" />
     <Compile Include="Assets\Ranking\ThirdScoreDirector.cs" />
     <Compile Include="Assets\Result\EndDirector.cs" />

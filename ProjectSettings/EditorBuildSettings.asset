@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Title.unity
     guid: 17a5e80669a7d1844a349268fb0af140
   - enabled: 1
+    path: Assets/PreGameScene.unity
+    guid: 1d034e45c55c91a4a9d83e5735826cd6
+  - enabled: 1
     path: Assets/GameScene.unity
     guid: 484ebf9a890b005418e9e3c86934361c
   - enabled: 1

@@ -28,13 +28,13 @@ public class SceneFade : MonoBehaviour {
     {
         fadeStart = "Fadeout";
         startTime = Time.time;
-        Invoke("GameStart", 2.5f);　//2.5秒後に下記の"GameStart()"を行う
+        Invoke("GameStart", 2.2f);　//2.2秒後に下記の"GameStart()"を行う
     }
 
-    //ゲームシーンへの遷移
+    //ゲームシーン準備画面への遷移
     public void GameStart()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("PreGameScene");
     }
 
     // Update is called once per frame

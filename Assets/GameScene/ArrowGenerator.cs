@@ -11,13 +11,21 @@ public class ArrowGenerator : MonoBehaviour {
     GameObject hpGauge;
 
     //無：普通の矢　R：赤い矢　Res：回復アイテム
-    float span = 0.5f;
-    float Rspan = 2.0f;
+    float span = 1.5f;
+    float Rspan = 10.5f;
     float ReSpan = 1.0f;
 
     float delta = 0;
     float Rdelta = 0;
     float ResDelta = 0;
+
+    //レベルデザイン用のメソッドを追加
+    public void SetParameter(float span, float Rspan, float Respan) //(矢、赤矢、回復)の落下頻度
+    {
+        this.span = span;
+        this.Rspan = Rspan;
+        this.ReSpan = Respan;
+    }
 
 	// Use this for initialization
 	void Start () {
