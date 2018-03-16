@@ -28,7 +28,7 @@ public class SceneFade : MonoBehaviour {
     {
         fadeStart = "Fadeout";
         startTime = Time.time;
-        Invoke("GameStart", 2.2f);　//2.2秒後に下記の"GameStart()"を行う
+        Invoke("GameStart", 3.2f);　//3.2秒後に下記の"GameStart()"を行う
     }
 
     //ゲームシーン準備画面への遷移

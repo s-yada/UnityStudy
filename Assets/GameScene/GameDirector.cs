@@ -8,7 +8,6 @@ public class GameDirector : MonoBehaviour {
 
     GameObject hpGauge;
     GameObject timer;
-    GameObject Audio;
     GameObject Generator;
     public static int Pscore;　//今回のスコア、resultでも使うのでstatic
     float score;
@@ -18,7 +17,6 @@ public class GameDirector : MonoBehaviour {
 	void Start () {
 
         this.hpGauge = GameObject.Find("hp_gauge");
-        this.Audio = GameObject.Find("Audio Source");
         this.timer = GameObject.Find("Timer");
         this.Generator = GameObject.Find("ArrowGenerator");
 
@@ -28,8 +26,6 @@ public class GameDirector : MonoBehaviour {
         //タイマーの初期化
         timer.GetComponent<Text>().text = "0 0 0 0";
 
-        //タイトルBGMの破棄
-        Destroy(Audio);
         	}
 	
     //矢に当たった時のダメージ

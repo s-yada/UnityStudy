@@ -297,9 +297,11 @@
     <Compile Include="Assets\GameScene\ArrowController.cs" />
     <Compile Include="Assets\GameScene\ArrowGenerator.cs" />
     <Compile Include="Assets\GameScene\GameDirector.cs" />
+    <Compile Include="Assets\GameScene\GameStartDirector.cs" />
     <Compile Include="Assets\GameScene\PlayerController.cs" />
     <Compile Include="Assets\GameScene\RarrowController.cs" />
     <Compile Include="Assets\GameScene\RescueController.cs" />
+    <Compile Include="Assets\PreGameScene\countdown.cs" />
     <Compile Include="Assets\PreGameScene\MoveGameScene.cs" />
     <Compile Include="Assets\PreTitle\BgmDirector.cs" />
     <Compile Include="Assets\PreTitle\MoveTitle.cs" />
