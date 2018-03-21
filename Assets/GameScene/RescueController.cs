@@ -37,6 +37,11 @@ public class RescueController : MonoBehaviour {
             //監督スクリプトに当たり判定を伝える
             GameObject director = GameObject.Find("GameDirector");
             director.GetComponent<GameDirector>().IncreaseHp();
+
+            //矢が当たった時のSEを再生する
+            GameObject SEdir = GameObject.Find("Game_SEdirector");
+            SEdir.GetComponent<GameSEdir>().RescueSe();
+
             Destroy(gameObject);　//オブジェクトを破棄
         }
     }

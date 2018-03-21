@@ -297,6 +297,7 @@
     <Compile Include="Assets\GameScene\ArrowController.cs" />
     <Compile Include="Assets\GameScene\ArrowGenerator.cs" />
     <Compile Include="Assets\GameScene\GameDirector.cs" />
+    <Compile Include="Assets\GameScene\GameSEdir.cs" />
     <Compile Include="Assets\GameScene\GameStartDirector.cs" />
     <Compile Include="Assets\GameScene\PlayerController.cs" />
     <Compile Include="Assets\GameScene\RarrowController.cs" />
@@ -315,6 +316,8 @@
     <Compile Include="Assets\Result\EndDirector.cs" />
     <Compile Include="Assets\Result\HighscoreDirector.cs" />
     <Compile Include="Assets\Result\ScoreDirector.cs" />
+    <Compile Include="Assets\Title\CheckButton.cs" />
+    <Compile Include="Assets\Title\CheckButtonRanking.cs" />
     <Compile Include="Assets\Title\SceneFade.cs" />
     <Compile Include="Assets\Title\SEdirector.cs" />
     <Compile Include="Assets\Title\StartDirector.cs" />

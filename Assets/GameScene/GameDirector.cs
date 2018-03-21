@@ -9,6 +9,7 @@ public class GameDirector : MonoBehaviour {
     GameObject hpGauge;
     GameObject timer;
     GameObject Generator;
+    GameObject player;
     public static int Pscore;　//今回のスコア、resultでも使うのでstatic
     float score;
     float oldScore;
@@ -19,6 +20,7 @@ public class GameDirector : MonoBehaviour {
         this.hpGauge = GameObject.Find("hp_gauge");
         this.timer = GameObject.Find("Timer");
         this.Generator = GameObject.Find("ArrowGenerator");
+        this.player = GameObject.Find("player");
 
         //スコアの初期化
         score = 0;
@@ -44,6 +46,12 @@ public class GameDirector : MonoBehaviour {
     public void IncreaseHp()
     {
         this.hpGauge.GetComponent<Image>().fillAmount += 0.1f;
+    }
+
+    //リザルト画面へ遷移させるメソッド
+    public void GameEnd()
+    {
+        SceneManager.LoadScene("Result");
     }
 
 	// Update is called once per frame
@@ -90,8 +98,9 @@ public class GameDirector : MonoBehaviour {
         //終了判定
         if (this.hpGauge.GetComponent<Image>().fillAmount <= 0)
         {
-            SceneManager.LoadScene("Result");
             Pscore = ((int)score);
+            Invoke("GameEnd", 1.0f);
+            player.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
         }
         
         //スコアの加算
