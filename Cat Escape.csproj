@@ -286,6 +286,39 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/yada.shinya/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.64.0">
+      <HintPath>Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.64.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Editor">
+      <HintPath>Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.64.0">
+      <HintPath>Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.64.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver_v1.2.64.0">
+      <HintPath>Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.64.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Analytics">
+      <HintPath>Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -321,6 +354,17 @@
     <Compile Include="Assets\Title\SceneFade.cs" />
     <Compile Include="Assets\Title\SEdirector.cs" />
     <Compile Include="Assets\Title\StartDirector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Firebase\Editor\AnalyticsDependencies.xml" />
+    <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
+    <None Include="Assets\Firebase\Editor\FirebaseAnalytics_v4.5.0_manifest.txt" />
+    <None Include="Assets\Firebase\Plugins\link.xml" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.64.0.txt" />
+    <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
