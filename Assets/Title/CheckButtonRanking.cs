@@ -12,6 +12,7 @@ public class CheckButtonRanking : MonoBehaviour {
         this.Rankingbutton = GameObject.Find("RankingButton");
     }
 	
+    //ボタンの色を青くするメソッド
     public void Onclick2()
     {
         Rankingbutton.GetComponent<Image>().color = Color.blue;

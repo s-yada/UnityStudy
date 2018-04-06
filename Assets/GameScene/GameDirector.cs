@@ -98,9 +98,9 @@ public class GameDirector : MonoBehaviour {
         //終了判定
         if (this.hpGauge.GetComponent<Image>().fillAmount <= 0)
         {
-            Pscore = ((int)score);
-            Invoke("GameEnd", 1.0f);
-            player.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+            Pscore = ((int)score);　//現在のスコアをこのゲームのリザルトスコアとする
+            Invoke("GameEnd", 1.0f);　//1秒後に終了判定を行う（SEのブツ切りを防ぐ）
+            player.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);　//プレイヤーの表示を画面上から消す
         }
         
         //スコアの加算

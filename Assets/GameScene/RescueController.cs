@@ -25,11 +25,11 @@ public class RescueController : MonoBehaviour {
         }
 
         //当たり判定
-        Vector2 p1 = transform.position; //"arrow"の中心座標
+        Vector2 p1 = transform.position; //"Rescue"の中心座標
         Vector2 p2 = this.player.transform.position; //"player"の中心座標
         Vector2 dir = p1 - p2;
         float d = dir.magnitude;
-        float r1 = 0.5f; //矢の半径
+        float r1 = 0.5f; //回復アイテムの半径
         float r2 = 1.0f; //プレイヤの半径
 
         if (d < r1 + r2)　//中心座標の距離が両半径の和未満の時
@@ -38,7 +38,7 @@ public class RescueController : MonoBehaviour {
             GameObject director = GameObject.Find("GameDirector");
             director.GetComponent<GameDirector>().IncreaseHp();
 
-            //矢が当たった時のSEを再生する
+            //回復アイテムが当たった時のSEを再生する
             GameObject SEdir = GameObject.Find("Game_SEdirector");
             SEdir.GetComponent<GameSEdir>().RescueSe();
 

@@ -12,21 +12,24 @@ public class GameSEdir : MonoBehaviour {
     void Start () {
 
         AudioSource[] audioSources = GetComponents<AudioSource>();
-        this.arrowSE = audioSources[0];
-        this.RarrowSE = audioSources[1];
-        this.rescueSE = audioSources[2];
+        this.arrowSE = audioSources[0];　//矢に当たった時のSE
+        this.RarrowSE = audioSources[1];　//赤い矢に当たった時のSE
+        this.rescueSE = audioSources[2];　//回復アイテムをとった時のSE
     }
 	
+    //矢に当たったSEを流すメソッド
     public void ArrowSe()
     {
         arrowSE.PlayOneShot(arrowSE.clip);
     }
 
+    //赤い矢に当たったSEを流すメソッド
     public void RArrowSe()
     {
         RarrowSE.PlayOneShot(RarrowSE.clip);
     }
 
+    //回復アイテムをとったSEを流すメソッド
     public void RescueSe()
     {
         rescueSE.PlayOneShot(rescueSE.clip);

@@ -13,6 +13,7 @@ public class CheckButton : MonoBehaviour {
         this.Startbutton = GameObject.Find("StartButton");
 	}
 
+    //TAP時にボタンの色を赤くするメソッド
     public void Onclick()
     {
         Startbutton.GetComponent<Image>().color = Color.red;
